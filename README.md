@@ -8,12 +8,12 @@ The game uses country specific name lists but some available countries in-game d
 
 Its actually quite simple to add a name list for a country that doesn't have one. Let's use Denmark as an example.
 
-- Open the `Names/ByCountry` directory for your game install
+- From the game install, open the `data/MyData/Names/ByCountry` directory
 - Add these files from the `dist` directory:
   - `DenmarkFNames.txt`
   - `DenmarkLNames.txt`
 - Find the country id in the `AvailableNations` file, which is `55` for Denmark
-- In the `MaleCountryNames.text` add a new line with:
+- In the `MaleCountryNames.txt` add a new line with:
     ```
     55    Denmark
     ```
