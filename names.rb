@@ -25,6 +25,7 @@ def get_names(url, max_length: 14)
     .map(&:strip)
     .select { |name| name.size < max_length }
     .uniq
+    .sort_by(&:downcase)
 end
 
 countries.each do |country, name_types|
